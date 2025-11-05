@@ -2,6 +2,12 @@ async function getUsers() {
     const res = await fetch("https://jsonplaceholder.typicode.com/users");
     return res.json();
   }
+
+  export async function generateMetadata() {
+    return {
+      title: "Users"
+    }
+  }
   
   export default async function Users() {
     const users = await getUsers();

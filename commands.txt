@@ -47,3 +47,19 @@ You get:
 Live link (e.g., https://my-next-app.vercel.app)
 
 CI/CD automatically (every time you git push, it redeploys)
+
+✅ Rename your project in Vercel Dashboard
+
+Go to Vercel Dashboard
+
+Click your project
+
+Click Settings
+
+Under General, rename the Project Name
+
+Then you'll get a cleaner URL like:
+
+next-practice.vercel.app
+
+npm run build
