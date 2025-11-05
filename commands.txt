@@ -1,0 +1,49 @@
+node -v
+npx create-next-app@latest my-next-app
+cd my-next-app
+npm run dev
+
+
+Create file:
+
+app/about/page.jsx
+
+Create file app/users/page.jsx
+
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/UnknownShad0/next-practice.git
+git branch -M main
+git push -u origin main
+
+
+🚀 How to Deploy Next.js to Vercel
+✅ Step 1: Push your code to GitHub
+
+(Done already ✅)
+
+✅ Step 2: Go to Vercel
+
+Visit vercel.com
+
+Log in using your GitHub account.
+
+✅ Step 3: Import Your Repo
+
+Click New Project
+
+Select your GitHub repo (example: my-next-app)
+
+Choose Framework → Next.js
+
+Click Deploy
+
+That's it! Vercel handles build + hosting.
+
+✅ Step 4: After Deployment
+
+You get:
+
+Live link (e.g., https://my-next-app.vercel.app)
+
+CI/CD automatically (every time you git push, it redeploys)
