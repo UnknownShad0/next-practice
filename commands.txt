@@ -73,6 +73,8 @@ npx prisma init
 npm install dotenv
 import "dotenv/config";
 
+npx prisma migrate dev --name init
+
 npx prisma dev
 
 npx prisma studio

@@ -35,33 +35,36 @@ export default function UsersPage() {
 
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Users</h1>
+    <h1 className="text-2xl font-bold mb-4">Users</h1>
 
+    <div className="flex flex-wrap gap-2 mb-4">
       <input
-        className="border p-2 mr-2"
+        className="border p-2 rounded-lg focus:ring focus:ring-blue-200"
         placeholder="Name"
         value={name}
-        onChange={(e)=>setName(e.target.value)}
+        onChange={(e) => setName(e.target.value)}
       />
-
       <input
-        className="border p-2 mr-2"
+        className="border p-2 rounded-lg focus:ring focus:ring-blue-200"
         placeholder="Email"
         value={email}
-        onChange={(e)=>setEmail(e.target.value)}
+        onChange={(e) => setEmail(e.target.value)}
       />
-
-      <button className="bg-blue-500 text-white p-2" onClick={addUser}>
+      <button
+        className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+        onClick={addUser}
+      >
         Add User
       </button>
-
-      <ul className="mt-4">
-        {users.map((u) => (
-          <li key={u.id}>
-            {u.name} - {u.email}
-          </li>
-        ))}
-      </ul>
     </div>
+
+    <ul className="bg-white shadow rounded-xl divide-y divide-gray-100">
+      {users.map((u) => (
+        <li key={u.id} className="p-3 hover:bg-gray-50">
+          <span className="font-medium">{u.name}</span> — {u.email}
+        </li>
+      ))}
+    </ul>
+  </div>
   );
 }
